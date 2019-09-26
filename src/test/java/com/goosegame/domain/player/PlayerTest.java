@@ -10,7 +10,7 @@ import org.junit.Test;
 public class PlayerTest {
 
   @Test
-  public void shouldGoesBack() {
+  public void shouldGoBack() {
     Box box1 = new Box().index(5);
     Box box2 = new Box().index(10).player(new Player("Kentucky"));
 
@@ -23,7 +23,7 @@ public class PlayerTest {
   }
 
   @Test(expected =FullBoxException.class)
-  public void shouldGoesToOccupiedBox() throws FullBoxException {
+  public void shouldGoToOccupiedBox() throws FullBoxException {
     Box box1 = new Box().index(5);
     Box box2 = new Box().index(10).player(new Player("Kentucky"));
 
@@ -32,7 +32,7 @@ public class PlayerTest {
   }
 
   @Test
-  public void shouldGoesTo() {
+  public void shouldGoTo() {
     Box box1 = new Box().index(5);
     Box box2 = new Box().index(10);
 
